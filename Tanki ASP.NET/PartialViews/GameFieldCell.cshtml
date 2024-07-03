@@ -1,0 +1,21 @@
+﻿@using Tanki_ASP.NET.Models.Enums
+@model Tanki_ASP.NET.Models.Enums.CellTile
+
+@switch (Model)
+{
+	case CellTile.Brick:
+	<div>B</div>
+		break;
+	case CellTile.Empty:
+	<div>E</div>
+		break;
+	case CellTile.FriendlyBase:
+	<div>FB</div>
+		break;
+	case CellTile.EnemyBase:
+	<div>EB</div>
+		break;
+	case CellTile.BadRock:
+	<div>BR</div>
+		break;
+}
